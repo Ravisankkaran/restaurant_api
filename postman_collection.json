@@ -1,0 +1,59 @@
+{
+  "info": {
+    "name": "Restaurant API",
+    "_postman_id": "restaurant-api-0001",
+    "description": "Minimal collection to test the Flask restaurant API (health, list orders, get order by id).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["health"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Orders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/orders?page=1&per_page=20",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["orders"],
+          "query": [
+            { "key": "page", "value": "1" },
+            { "key": "per_page", "value": "20" }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Order by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/orders/11",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["orders", "11"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

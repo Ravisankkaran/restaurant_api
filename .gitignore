@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# SQLite database
+*.db
+*.sqlite3
+
+# Environment variables
+*.env
+.env.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python egg files
+*.egg-info/
+.eggs/
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Python cache
+.cache/
+pytest_cache/
+
+# Distribution / packaging
+build/
+dist/
+*.egg
+*.whl
+
+# Postman temp
+.postman/
+
+# Backup files
+*.bak
+*.swp
+
+# Flask instance folder (if used)
+instance/

@@ -1,103 +1,115 @@
-README.md
-Restaurant Orders & Payments API
+# Fullstack Developer Assessment - Python API  
 
-This project is a simple backend application built using Flask, SQLAlchemy, and SQLite.
-It provides APIs to view restaurant orders, their items, and payment details.
-The data is taken from the sample dataset provided in the assignment.
+**By: Ravisankkaran I**
 
-Tech Stack
--Python 3
--Flask
--Flask SQLAlchemy
--SQLite
--Postman (for testing)
+## Restaurant Orders & Payments API
 
-Project Setup
-1. Create Virtual Environment
+This project is a simple backend application built using **Flask**, **SQLAlchemy**, and **SQLite**.  
+It provides APIs to view restaurant orders, their items, and payment details.  
+All data is taken from the sample dataset provided in the assignment.
+
+---
+
+## Tech Stack
+- Python 3  
+- Flask  
+- Flask SQLAlchemy  
+- SQLite  
+- Postman (for testing)
+
+---
+
+## Project Setup
+
+### 1. Create Virtual Environment
 python -m venv venv
 
-2. Activate Environment
-Windows -venv\Scripts\activate
+### 2. Activate Environment  
+Windows:
+venv\Scripts\activate
 
-3. Install Requirements
+### 3. Install Requirements
 pip install -r requirements.txt
 
-Database Setup
-Run the seeding script
+---
 
-This will create the database and insert all the sample menu, order, and payment data.
+##  Database Setup
+
+Run the seeding script to create the database and insert sample data:
 
 python seed_db.py
-
 
 If you see:
 
 DB seeded.
 
+Then your database was created successfully.
 
-It means your database was created successfully.
+---
 
-Run the Application
+##  Run the Application
 
-Start the server using:
+Start the Flask server:
 
 python app.py
 
-
-Server runs at:
+Server will run at:
 
 http://localhost:5000
 
-API Endpoints
-1. Health Check
-GET /health
+---
 
+## API Endpoints
 
-Used to check if the server is running.
+### 1. Health Check  
+GET /health  
+Checks if the server is active.
 
-2. List Orders
+---
+
+### 2. List Orders  
 GET /orders
 
-
-You can also use:
-
+Supports pagination:  
 GET /orders?page=1&per_page=20
 
-
 Returns:
--Order ID
--Order date
--Order status
--Total amount
--Number of items in the order
--Payment summary
+- Order ID  
+- Order date  
+- Order status  
+- Total amount  
+- Number of items  
+- Payment summary  
 
-3. Get Order by ID
+---
+
+### 3. Get Order by ID  
 GET /orders/<order_id>
 
-
-Example:
-
+Example:  
 GET /orders/11
 
+Returns full order details:
+- Order items  
+- Item price, size, quantity  
+- Line totals  
+- All payments for the order  
 
-Returns full details:
--Order items
--Item price, size, quantity
--Line totals
--All payments for that order
+---
 
-
-How AI Was Used (Required in Assignment)
+## How AI Was Used (Required in Assignment)
 
 I used ChatGPT mainly for guidance in:
+- Understanding Flask relationships  
+- Fixing errors during setup  
+- Generating sample seed data from the assignment table  
 
-    -Understanding Flask relationships
+**All coding, debugging, and testing were done manually by me.**
 
-    -Fixing errors during setup
+---
 
-    -Generating sample seed data from the assignment table
+## Contact Details
 
-    -All the coding, debugging, and testing were done by me manually.
-
-
+**Ravisankkaran I**  
+Email: ravisankkaran@gmail.com  
+Phone: +91 7395978321
